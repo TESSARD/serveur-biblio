@@ -17,3 +17,10 @@ Valider par « O »
 
 nodemon start //lancer serveur nodemon
 npm start / lancer server node sans relancement automatique
+
+# morgan HTTP request logger middleware for node.js
+permet d'idéntifier les différentes problèmatiques sur le serveur
+
+npm i morgan 
+
+# npm i twig
