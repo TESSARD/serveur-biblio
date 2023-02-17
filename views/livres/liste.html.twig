@@ -1,0 +1,53 @@
+{% extends "base.html.twig" %}
+{% block   titre %} page listant les livres  {% endblock %}
+{% block   contenu %} 
+<table class="table text-center monTableau" id="tableauLivres">
+    <thead>
+        <tr class="table-active">
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Nombre de pages</th>
+            <th colspan="2">Actions</th>
+            
+        </tr>
+    
+    </thead>
+    <tbody>
+    <tr>
+        <td><a href="/livres/La france du 19ème">La france du 19ème</a></td>
+        <td>Albert Patrick</td>
+        <td>500</td>
+        <td><a href="" class="btn btn-warning">Modifier</a></td>
+        <td><a href="" class="btn btn-danger">Supprimer</a></td>
+    </tr>
+    <tr>
+        <td><a href="/livres/Le monde des animaux">Le monde des animaux</td>
+        <td>Marc Merlin</td>
+        <td>250</td>
+        <td>
+            <a href="" class="btn btn-warning">Modifier</a>
+        </td>
+        <td>
+            <a href="" class="btn btn-danger">Supprimer</a>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="/livres/Le virus d'Asie">Le virus d'Asie</td>
+        <td>Tya Milo</td>
+        <td>120</td>
+        <td>
+            <a href="" class="btn btn-warning">Modifier</a>
+        </td>
+        <td>
+            <a href="" class="btn btn-danger">Supprimer</a>
+        </td>
+    </tr>
+
+        
+    </tbody>
+
+
+</table>
+<a href=""  class="btn btn-success  w-100 " type="submit">Ajouter</a>
+
+ {% endblock %}
