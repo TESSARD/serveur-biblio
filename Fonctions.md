@@ -24,3 +24,19 @@ permet d'idéntifier les différentes problèmatiques sur le serveur
 npm i morgan 
 
 # npm i twig
+
+# mongoose
+npm i mongoose
+
+# parser
+npm i body-parser
+
+# express-session
+npm i express-session
+
+# multer
+npm i multer
+
+Multer est un middleware node.js pour la gestion multipart/form-data, qui est principalement utilisé pour télécharger des fichiers. Il est écrit au-dessus du busboy pour une efficacité maximale.
+
+REMARQUE : Multer ne traitera aucun formulaire qui n'est pas en plusieurs parties ( multipart/form-data).
