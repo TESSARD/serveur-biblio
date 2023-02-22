@@ -3,6 +3,7 @@ const server = express() //lancement
 const morgan = require("morgan") //morgan HTTP request logger middleware for node.js
 const routerLivres = require("./routeurs/livres.routeur") 
 const routerGlobal = require("./routeurs/global.routeur") 
+const routerAuteur = require("./routeurs/auteurs.routeur") 
 const mongoose = require("mongoose") //mongoose
 const bodyParser = require("body-parser") //mongoose
 const session = require("express-session") //mongoose
@@ -40,7 +41,8 @@ server.use((requete, reponse, suite)=>{
 
 server.set('trust proxy', 1) // trust first proxy
 
-server.use("/", routerLivres)
+server.use("/livres/", routerLivres)
+server.use("/auteurs/", routerAuteur)
 server.use("/", routerGlobal)
 
 server.listen(3000) //écoute sur port

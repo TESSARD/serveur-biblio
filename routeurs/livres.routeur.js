@@ -54,25 +54,25 @@ const  upload  =  multer ( {
 
 
 //affichezr toutes les livres trouvé dans BDD
-router.get("/livres",livreController.livres_affichage)
+router.get("/",livreController.livres_affichage)
 
 //upload image
-router.post("/livres", upload.single("image"), livreController.livres_ajout)
+router.post("", upload.single("image"), livreController.livres_ajout)
 
 //afficher le livre demandé par url
-router.get("/livres/:id",  livreController.livre_affichage)
+router.get("/:id",  livreController.livre_affichage)
 
 //modification (formulaire)
-router.get("/livres/modification/:id",  livreController.livre_modification)
+router.get("/modification/:id",  livreController.livre_modification)
 
 // modification livre
-router.post("/livres/modificationServer", livreController.livre_modification_validation)
+router.post("/modificationServer", livreController.livre_modification_validation)
 
 // modification image
-router.post("/livres/updateImage", upload.single("image"), livreController.livre_modification_image)
+router.post("/updateImage", upload.single("image"), livreController.livre_modification_image)
 
 //supprimer
-router.post("/livres/delete/:id",  livreController.livre_suppression)
+router.post("/delete/:id",  livreController.livre_suppression)
 
 
 

@@ -1,11 +1,15 @@
 const mongoose = require("mongoose") //mongoose
 
 
-const livreShema = mongoose.Schema(//structurer les informations dans le BDd
+const livreShema = mongoose.Schema(//structurer les informations dans le BDD
         {
         _id: mongoose.Schema.Types.ObjectId,
         nom: String,
-        auteur: String,
+        auteur: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref : "Auteur",//reference au model Auteur
+          required: true
+        },
         pages: Number,
         description: String,
         image: String

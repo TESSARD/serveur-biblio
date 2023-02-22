@@ -40,3 +40,19 @@ npm i multer
 Multer est un middleware node.js pour la gestion multipart/form-data, qui est principalement utilisé pour télécharger des fichiers. Il est écrit au-dessus du busboy pour une efficacité maximale.
 
 REMARQUE : Multer ne traitera aucun formulaire qui n'est pas en plusieurs parties ( multipart/form-data).
+
+## mongoose
+# .populate()
+Appeler simplement la méthode populate sur la requête et un tableau de documents sera renvoyé à la place des s d'origine _id.
+
+# .virtual()
+Dans Mongoose, un virtuel est une propriété qui n'est pas stockée dans MongoDB. Les virtuels sont généralement utilisés pour les propriétés calculées sur les documents.
+
+# enctype="multipart/form-data"
+ne pas utiliser si pas de fichiers
+
+# "$set"
+pour la modification
+
+# updateMany()
+//modiffier toutes les livres ayant auteur à supprimer 
